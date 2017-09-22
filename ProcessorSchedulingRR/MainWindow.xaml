@@ -1,0 +1,23 @@
+﻿<Window x:Class="ProcessorSchedulingRR.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Round Robin Simulation" Height="400" Width="800">
+    <Grid Background="#FFAAC1FF">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="13*"/>
+            <ColumnDefinition Width="61*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Round Robin Scheduling Simulation" HorizontalAlignment="Left" Margin="25,20,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.497,-0.948" FontFamily="Arial" FontSize="20" Grid.ColumnSpan="2"/>
+        <Label Content="Arrival Time (ms):" HorizontalAlignment="Left" Margin="25,68,0,0" VerticalAlignment="Top" FontFamily="Arial" Grid.ColumnSpan="2"/>
+        <Label Content="Burst Time (ms):" HorizontalAlignment="Left" Margin="25,104,0,0" VerticalAlignment="Top" FontFamily="Arial" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="TextBoxArrival" HorizontalAlignment="Left" Height="23" Margin="23,69,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="98" Grid.Column="1"/>
+        <TextBox x:Name="TextBoxBurst" HorizontalAlignment="Left" Height="23" Margin="23,105,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="98" Grid.Column="1"/>
+        <Button x:Name="ButtonAddProcess" Content="Add Process" HorizontalAlignment="Left" Margin="25,145,0,0" VerticalAlignment="Top" Width="100" FontFamily="Arial" Click="ButtonAddProcess_Click" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="TextBoxQuantum" HorizontalAlignment="Left" Height="23" Margin="23,266,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="50" Grid.Column="1"/>
+        <Label Content="Time Quantum (ms):" HorizontalAlignment="Left" Margin="25,266,0,0" VerticalAlignment="Top" FontFamily="Arial" RenderTransformOrigin="0.512,2.488" Grid.ColumnSpan="2"/>
+        <Button x:Name="ButtonRunSimulation" Content="Run Simulation" HorizontalAlignment="Left" Margin="25,306,0,0" VerticalAlignment="Top" Width="187" FontFamily="Arial" Height="34" Grid.ColumnSpan="2" Click="ButtonRunSimulation_Click"/>
+        <TextBox x:Name="TextBoxOutput" HorizontalAlignment="Left" Height="272" Margin="194,68,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="434" ScrollViewer.HorizontalScrollBarVisibility="Disabled" ScrollViewer.VerticalScrollBarVisibility="Auto" Grid.Column="1"/>
+        <Button x:Name="ButtonRemoveAll" Content="Remove All" HorizontalAlignment="Left" Margin="23,185,0,0" VerticalAlignment="Top" Width="100" FontFamily="Arial" Click="ButtonRemoveAll_Click"/>
+
+    </Grid>
+</Window>
